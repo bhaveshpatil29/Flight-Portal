@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body >
+	
+	<style>
+	body{
+	background: url("airline.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+      }
+	  
+	  .jumbotron{
+    margin: 0 auto;
+    width: 800px; padding: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: rgba(21, 21, 23, 0.4);
+    opacity: 0.7;
+
+  }
+
+	  
+	  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #0b100c;
+  }
+
+		</style>
+	
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a class="active" href="signin.html">Sign In</a></li>
+		<li><a href="adminsign.html">Admin</a></li>
+		<li><a href="contact.php">Contact</a></li>
+		<li><a href="about.html">About</a></li>
+		<li style="float: left; color:white;font-family: sans-serif;font-size: 35px;">IndiGo</li>
+	  </ul>
+	
+	<div class="container-fluid">
+		<div class="jumbotron">
+			
+			<form class="form" id="newEntryForm" action="signup.php" method="get">
+				<div class="form-group">
+					<label for="firstname" >Firstname
+						<input type="text" class="form-control" id="firstname" name="firstname">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="lastname">Lastname
+						<input type="text" class="form-control" id="lastname" name="lastname">
+					</label>
+				</div>
+				<div class="form-group">
+					<span id="result"></span>
+					<label for="password">Password
+						<input type="password" class="form-control" id="password" name="password">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="emailid">EmailId
+						<input type="text" class="form-control" id="emailid" name="emailid">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="mobile">Mobile
+						<input type="number" class="form-control" id="mobile" name="mobile">
+					</label>
+				</div>
+				<button type="submit" class="btn btn-success">Sign Up</button>
+				<button type="reset" class="btn btn-danger">Reset</button>
+			</form>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

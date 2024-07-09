@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	
+</head>
+<style>
+	body{
+	background-image: url('airline.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+.container{
+	opacity: 0.7;
+	background-color:rgb(22, 21, 21);
+	color: white;
+}
+</style>
+<body >
+	
+	<div class="container">
+		<div class="jumbotron"style="background-color:rgb(22, 21, 21,0.7)">
+			<form class="form" id="flightForm" action="admin.php" method="get">
+				<h2 align="center">Add</h2>
+				<div class="form-group">
+					<label for="text">Airline Name</label>
+					<input type="text" class="form-control" name="airlinename">
+				</div>
+				<div class="form-group">
+					<label for="text">Flight Id</label>
+					<input type="text" class="form-control" name="flightid">
+				</div>
+				<div class="form-group">
+					<label for="text">From Location</label>
+					<input type="text" class="form-control" name="fromlocation">
+				</div>
+				<div class="form-group">
+					<label for="text">To Location</label>
+					<input type="text" class="form-control" name="tolocation">
+				</div>
+				<div class="form-group">
+					<label for="text">Seats</label>
+					<input type="text" class="form-control" name="totalseats">
+				</div>
+				<div class="form-group">
+					<label for="text">Departure Date</label>
+					<input type="date" class="form-control" name="departuredate">
+				</div>
+				<div class="form-group">
+					<label for="text">Departure Time</label>
+					<input type="text" class="form-control" name="departuretime">
+				</div>
+				<div class="form-group">
+					<label for="text">Arrival Date</label>
+					<input type="date" class="form-control" name="arrivaldate">
+				</div>
+				<div class="form-group">
+					<label for="text">Arrival Time</label>
+					<input type="text" class="form-control" name="arrivaltime">
+				</div>
+				<div class="form-group">
+					<label for="text">Price</label>
+					<input type="text" class="form-control" name="price">
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+				<button type="reset" class="btn btn-danger">Clear</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
